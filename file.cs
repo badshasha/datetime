@@ -27,15 +27,12 @@ System.Console.WriteLine( v1.AddHours(-5) ); // nnegative
 // time stamp not contain time in a day it's containing defferent time points 
 
 
+
+
+
 TimeSpan ts = TimeSpan.Parse("4:15:30.12345"); // 4 hours 15 minutes 30 secound 12345 milisecound 
 // TimeSpan ts = TimeSpan.Parse("5:4:15:30.12345"); // now we add 5 days 
-System.Console.WriteLine( ts );
 
-System.Console.WriteLine(  v1.Add(ts) );
-
-DateTime t3 = v1.Add(ts);
-
-TimeSpan value = t3.Subtract(v1); // 2 overloads // output timestamp
-                    //   1 another datetime 
-                    //   2 time stamp
-
+System.Console.WriteLine( ts.Days ); // how many days in given time stamp
+System.Console.WriteLine(  ts.Minutes ); // number of minutes 
+System.Console.WriteLine(  ts.TotalMinutes ); // totoal number of minutes 
