@@ -36,3 +36,9 @@ TimeSpan ts = TimeSpan.Parse("4:15:30.12345"); // 4 hours 15 minutes 30 secound 
 System.Console.WriteLine( ts.Days ); // how many days in given time stamp
 System.Console.WriteLine(  ts.Minutes ); // number of minutes 
 System.Console.WriteLine(  ts.TotalMinutes ); // totoal number of minutes 
+
+
+
+// compare values 
+System.Console.WriteLine($"{DateTime.Compare(v1,v2)}");
+System.Console.WriteLine($"{DateTime.Compare(v2,v1)}");
