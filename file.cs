@@ -42,3 +42,26 @@ System.Console.WriteLine(  ts.TotalMinutes ); // totoal number of minutes
 // compare values 
 System.Console.WriteLine($"{DateTime.Compare(v1,v2)}");
 System.Console.WriteLine($"{DateTime.Compare(v2,v1)}");
+
+
+/////////////////////////////////////
+// printing
+/////////////////////////////////////
+
+System.Console.WriteLine($"short date {v1.ToString("d")}"); // 5/26/2022
+System.Console.WriteLine($"long date {v1.ToString("D")}");  // Thursday, May 26, 2022
+System.Console.WriteLine($"short time {v1.ToString("t")}"); // 12:46 PM
+System.Console.WriteLine($"long time {v1.ToString("T")}");  // 12:46:43 PM
+
+
+System.Console.WriteLine($"Round trip {v1.ToString("O")}"); // Round trip 2022-05-26T12:48:32.1044562+05:30
+
+
+System.Console.WriteLine($"full short {v1.ToString("f")}");  // full short Thursday, May 26, 2022 12:52 PM
+System.Console.WriteLine($"full long {v1.ToString("F")}");  // full long Thursday, May 26, 2022 12:52:08 PM
+System.Console.WriteLine($"general short {v1.ToString("g")}"); // general short 5/26/2022 12:52 PM
+System.Console.WriteLine($"general Long {v1.ToString("G")}"); // general Long 5/26/2022 12:52:08 PM
+
+
+System.Console.WriteLine($"sortable {v1.ToString("s")}"); // sortable 2022-05-26T12:54:56
+System.Console.WriteLine($"Universal Long {v1.ToString("U")}"); // Universal Long Thursday, May 26, 2022 7:24:56 AM
