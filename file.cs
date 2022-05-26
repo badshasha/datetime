@@ -65,3 +65,10 @@ System.Console.WriteLine($"general Long {v1.ToString("G")}"); // general Long 5/
 
 System.Console.WriteLine($"sortable {v1.ToString("s")}"); // sortable 2022-05-26T12:54:56
 System.Console.WriteLine($"Universal Long {v1.ToString("U")}"); // Universal Long Thursday, May 26, 2022 7:24:56 AM
+
+
+
+// custome printing 
+
+System.Console.WriteLine($"custom {v1.ToString("MMM dd, yyyy  [hh:mm:tt] (zzz)")}"); //custom  May 26, 2022  [01:02:PM] (+05:30)
+System.Console.WriteLine($"custom {v1.ToString("dd, yyyy  [HH:mm:tt] (zzz)")}"); // custom 26, 2022  [13:04:PM] (+05:30)
