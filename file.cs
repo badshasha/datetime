@@ -16,3 +16,7 @@ System.Console.WriteLine(  v1.Kind );  // local or utc
 
 System.Console.WriteLine( v1.ToUniversalTime() );
 
+v1 = v1.AddHours(1); // positive 
+System.Console.WriteLine( v1);
+
+System.Console.WriteLine( v1.AddHours(-5) ); // nnegative
